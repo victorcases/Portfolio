@@ -1,5 +1,8 @@
 *{
-    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;   
 }
 nav{
     display: flex;
@@ -25,13 +28,22 @@ nav a:hover{
     display: inline-block;
     padding: 3rem;
 }
-
+.educacion, .experience{
+    margin: 5%;
+}
+.educacion h3{
+    margin-bottom: 2%;
+}
+.experience h3{
+margin-bottom: 2%;
+}
 .foto img{
     width: 100%;
     border-radius: 15px;
 }
 ul{
     list-style: upper-roman;
+    margin: 1%;
 }
 .button{
     text-align: center;
@@ -73,6 +85,19 @@ ul{
         text-align: center;
         padding: 0rem;
     }
+    .educacion, .experience{
+        margin: 5%;
+    }
+    .educacion h3{
+        margin-bottom: 2%;
+    }
+    .experience h3{
+    margin-bottom: 2%;
+    }
+    ul{
+        list-style: upper-roman;
+        margin: 1%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px){
@@ -96,4 +121,16 @@ ul{
     h3{
         text-align: center;
     }
+    .educacion, .experience{
+        margin: 5%;
+    }
+    .educacion h3{
+        margin-bottom: 2%;
+    }
+    .experience h3{
+    margin-bottom: 2%;
+    }
+    ul{
+        list-style: upper-roman;
+        margin: 1%;}
 }

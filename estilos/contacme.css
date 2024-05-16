@@ -1,5 +1,8 @@
 *{
-    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;   
 }
 nav{
     display: flex;
@@ -16,6 +19,8 @@ nav a:hover{
     color: gold;
 }
 h2{
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-align: center;
 }
 form{
