@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Encabezado de la página-->
+    <h1>LMSGI - Práctica 1 - FORMULARIO</h1><span></span><span></span>
+    <!--Barra de navegación de la páginas-->
+        <h2>Mapa WEB</h2><span></span>
+    <!--Barra de navegación de la páginas-->
+            <a href="home.html">Home</a> | <a href="tabla.html">Tabla</a> | <a href="Formulario.html">Formulario</a> | <a href="How_to.html">How_to</a> | <a href="www.google.es"><img src="media/img/Google_2011_logo.png" alt="logo google"  width="100px" height="50px"></a><span></span>
+            <h1>Formulario</h1>
+            <form action="php/form.php" method="post">
+                <!--Con el fieldset marcamos un recuadro dentro del formulacion con las mismas características-->
+                <fieldset>
+                    <legend>Datos personales</legend><br>
+                        Nombre <input type="text" name="name" required  placeholder="Victor"><br><br>
+                        Apellido <input type="text" name="surname"  placeholder="Apellidos" required><br><br>
+                        Teléfono <input type="tel" name="mobile" placeholder="68483882" required><br><br>
+                </fieldset><br>
+                
+                <fieldset>
+                    <legend>Otros datos</legend><br>
+                        <input type="radio" name="sexo" value="Mujer" checked>Mujer  <input type="radio" name="sexo" value="hombre">Hombre  <br><br>
+                        <input type="checkbox" name="eleccion" value="musica">Música   <input type="checkbox" name="eleccion" value="juegos">Juegos <br><br>
+                        SO   <select name="seleccion">
+                            <option value="." selected>--selecciona--</option>
+                            <option value="trivial">Trivial</option>
+                            <option value="discos">Discos</option>
+                            <option value="tocadiscos">Tocadiscos</option>
+                        </select><br><br>
+                        <!--La subida de archivos solo acepta formatos de imagen y el segundo solo .pdf pudiendo subir archivos múltiples-->
+                        Subir archivo: <input type="file" name="archivossubidos" accept="image/png, .jpeg, .jpg, image/gif"> <input type="file" accept=".pdf" multiple> <br><br>
+                        <textarea name="observaciones" rows="10" cols="40" placeholder="Observaciones"></textarea>
+                </fieldset><br>
+                        <input type="submit" value="Enviar"> <input type="reset" value="Limpiar">
+            </form>
+    
+</body>
+</html>

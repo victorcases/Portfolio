@@ -1,0 +1,41 @@
+*{
+    background-color: blanchedalmond;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color: gold;
+}
+h2{
+    text-align: center;
+}
+form{
+    padding-left: 10%;
+    width: 70%;
+    text-align: center;
+}
+legend{
+    font-size: 20px;
+    text-align: center;
+    border: 2px groove green;
+}
+form input{
+    border:none;
+    border-bottom: 1px solid grey;
+}
+textarea{
+    padding: 10px;
+}
+/*@media (min-width: 481px) and (max-width: 767px){}
+    No realizo modificación puesto que lo veo bien. */
+    
+ /*@media (min-width: 768px) and (max-width: 1024px){} 
+    No realizo modificación puesto que lo veo bien. */

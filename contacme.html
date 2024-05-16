@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/contacme.css">
+    <!--Nombre de la pestaña en el navegador y la imagen en la pestaña-->
+    <title>CONTACT ME</title>
+    <link rel="shortcut icon" href="media/favicon.png" alt="logo de la pagina">
+</head>
+<body>
+   <!--Menú de navegación de la página-->
+    <nav>
+        <a href="index.html" target="_blank">MAIN PAGE</a> <a href="resume.html"  target="_blank">RESUME</a> <a href="portfolio.html"  target="_blank">PORTFOLIO</a> <a href="contacme.html"  target="_blank">CONTACT ME</a> 
+    </nav>
+    <h2>Hi there! If i just be interesting to you please fill the next form up to contact me and I will answer you as soon as possible. Thank you! </h2>
+<!-- Creación del formulario -->        
+    <form action="php/form.php" method="post">
+                <!--Con el fieldset marcamos un recuadro dentro del formulacion con las mismas características-->
+                <fieldset>
+                    <legend>Personal information</legend><br>
+                        Name <input type="text" name="name" required  placeholder="Insert here your name"><br><br>
+                        Surname <input type="text" name="surname"  placeholder="Insert here your surname"><br><br>
+                        Phone <input type="tel" name="mobile" placeholder="Insert Here your phone number" required><br><br>
+                        Email <input type="text" name="email" placeholder="Insert Here your phone number" required><br><br>
+                        Upload file: <input type="file" name="archivossubidos"><br><br>
+                        <textarea name="observaciones" rows="10" cols="40" placeholder="Write here what you required from me..."></textarea><br>
+                        <input type="submit" value="Send"> <input type="reset" value="Reset">
+                </fieldset><br>
+    </form>
+    
+</body>
+</html>

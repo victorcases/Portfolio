@@ -1,0 +1,86 @@
+*{
+    background-color: blanchedalmond;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color: gold;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    padding-left: 5rem;
+}
+.intro{
+    display: inline-block;
+    padding: 3rem;
+}
+
+.foto img{
+    width: 100%;
+    border-radius: 15px;
+}
+ul{
+    list-style: upper-roman;
+}
+.habilidades{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    border: 4px groove black;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+}
+.button button:hover{
+    background:grey;
+    color: wheat;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .head{;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0rem;
+    }
+    .foto {
+        width: 100%;
+        justify-content: center;
+    }
+    .intro {
+        width: 100%;
+        text-align: center;
+        padding: 0rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0rem;
+    }
+    .foto {
+        width: 100%;
+        justify-content: center;
+    }
+    .intro {
+        width: 100%;
+        text-align: center;
+        padding: 0rem;
+    }
+}

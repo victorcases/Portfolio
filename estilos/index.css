@@ -1,0 +1,60 @@
+*{
+    background-color: blanchedalmond;
+}
+nav{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color: gold;
+}
+h1{
+    text-align: center;
+}
+.central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.lista{
+    justify-content: space-around;
+    border: 1px solid black;
+    box-shadow: 5px 0px 5px 5px;
+    padding-right: 3rem;
+
+}
+.lista li{
+    margin-bottom: 5rem;
+}
+.final{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* @media (min-width: 768px) and (max-width: 1024px){}
+    No toco nada porque lo veo bien. */
+
+
+@media (min-width: 481px) and (max-width: 767px){
+    .central{
+        display: flex
+    }
+    .foto  img{
+        width: 100%;
+    }
+    .lista ul{
+        width: 100%;
+    }
+    .lista li {
+        margin-bottom: 1rem;
+    }
+}
