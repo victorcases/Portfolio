@@ -1,11 +1,15 @@
 *{
-    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;   
 }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    border-bottom: 1px solid black;
 }
 nav a{
     color: black;
@@ -16,58 +20,88 @@ nav a:hover{
 }
 h2{
     text-align: center;
+    margin-top: 20px;
 }
-.works{
-    display:flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-}
-.works img{
-    border-radius: 30px;
-}
-.works p{
+.works {
+    display: flex;
     text-align: center;
-    font-size: 20px;
-
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
+.trabajo {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trabajo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.trabajo p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 2%;
+}
+
 .cita{
     text-align: center;
     font-size: 25px;
-    text-transform:capitalize;
-    text-indent:30px;
     letter-spacing:2px;
     font-weight:bold;
 }
 @media (min-width: 768px) and (max-width: 1024px){
-    .works{
+    .works {
         display: block;
-        justify-content: center;
-        align-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
-    .works img{
-     border-radius: 30px;
-    }
-    .works p{
-        font-size: 15px;
-    }
+    
     .trabajo {
-        display: flex;
-        padding-top: 2rem;
-        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-bottom: 20px;
+        background-color: blanchedalmond;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .trabajo img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .trabajo p {
+        font-size: 14px;
+        line-height: 1.5;
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px){
-    .works{
+@media (min-width: 481px) and (max-width: 767px) {
+    .works {
         display: block;
         justify-content: center;
         align-content: center;
     }
-    .works img{
-     border-radius: 30px;
-     padding-left: 2rem;
+    .works img {
+        border-radius: 10%;
+        padding-left: 2rem;
     }
-    .works p{
+    .works p {
+        font-size: 15px; 
+    }
+    .cita {
         font-size: 15px;
+    }
+    h2 {
+        font-size: 20px;
     }
 }

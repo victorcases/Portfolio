@@ -6,6 +6,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    border-bottom: 1px solid black;
 }
 nav a{
     color: black;
@@ -15,6 +16,7 @@ nav a:hover{
     color: gold;
 }
 .head{
+    margin-top: 3%;
     display: flex;
     justify-content: center;
     padding-left: 5rem;
@@ -31,11 +33,6 @@ nav a:hover{
 ul{
     list-style: upper-roman;
 }
-.habilidades{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 .button{
     text-align: center;
 }
@@ -49,8 +46,19 @@ ul{
     background:grey;
     color: wheat;
 }
+.habilidades{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 50%; 
+}
 @media (min-width: 768px) and (max-width: 1024px){
-    .head{;
+    .head{
+        margin-top: 3%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -68,19 +76,24 @@ ul{
 }
 
 @media (min-width: 481px) and (max-width: 767px){
-    .head{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0rem;
-    }
-    .foto {
-        width: 100%;
-        justify-content: center;
+    .head {
+        margin-top: 3%;
+        display: block;
+        text-align: center;
+        margin-left: -10%;
     }
     .intro {
         width: 100%;
         text-align: center;
         padding: 0rem;
+    }
+    .intro h2{
+        font-size: 15px;
+    }
+    .intro p{
+        font-size: 15px;
+    }
+    h3{
+        text-align: center;
     }
 }
