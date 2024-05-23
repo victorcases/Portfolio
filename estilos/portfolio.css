@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: blanchedalmond;   
+    background-color: blanchedalmond;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
 }
 nav{
     display: flex;
@@ -10,6 +16,7 @@ nav{
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid black;
+    margin-bottom: 5px;
 }
 nav a{
     color: black;
@@ -18,91 +25,123 @@ nav a{
 nav a:hover{
     color: gold;
 }
-h2{
-    text-align: center;
-    margin-top: 20px;
-}
-.works {
+.works{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.img{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height:90%;
+    width: 100%;
+    border-radius:15px ;
+}
+.texto{
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.texto h3{
+    text-shadow: 0px 0px 15px rgb(255, 255, 255);
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 27px;  
+}
+
+.texto p{
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 3%;
+    padding: 20px;
+    color:rgb(0, 0, 0);
+    font-size: 0px;
+    font-weight: 300;
 }
 
-.trabajo {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-bottom: 20px;
-    background-color: blanchedalmond;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.imagenes .texto{
+    width: 500px;
+    height: 80px;
+    transition: 1s;
 }
 
-.trabajo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.imagenes:hover .texto{
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 300px;
 }
-
-.trabajo p {
-    font-size: 14px;
-    line-height: 1.5;
-    padding-left: 2%;
+.imagenes:hover .texto p{
+    transition: font-size 0s .2s linear;
+    font-size: 23px;
+    font-weight: 300;
 }
-
-.cita{
-    text-align: center;
-    font-size: 25px;
-    letter-spacing:2px;
-    font-weight:bold;
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1024px){
-    .works {
-        display: block;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-top: 20px;
+    .works{
+        height: 100vh;
+    }
+    .imagenes .texto {
+        width: 50%;
+        height: 120px;
     }
     
-    .trabajo {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        margin-bottom: 20px;
-        background-color: blanchedalmond;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .imagenes:hover .texto {
+        transform: translateY(-100px);
+        height: 250px;
     }
     
-    .trabajo img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-    
-    .trabajo p {
-        font-size: 14px;
-        line-height: 1.5;
+    .imagenes:hover .texto p {
+        font-size: 20px;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .works {
-        display: block;
-        justify-content: center;
-        align-content: center;
+    .works{
+        height: 100vh;
     }
-    .works img {
-        border-radius: 10%;
-        padding-left: 2rem;
+    .texto h3{
+        text-shadow: 0px 0px 15px rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-weight: 300;
+        font-size: 15px;  
+    } 
+    .texto p{
+        text-align: center;
+        color:rgb(0, 0, 0);
+        font-weight: 300;
+    }    
+    .imagenes .texto{
+        width: 40%;
+        height: 50px;
+        transition: 1s;
     }
-    .works p {
-        font-size: 15px; 
+    .imagenes:hover .texto{
+        transition: height 1s, transform 1s, background-color 1s;
+        transform: translateY(-20px);
+        height: 100px;
     }
-    .cita {
-        font-size: 15px;
-    }
-    h2 {
-        font-size: 20px;
+    .imagenes:hover .texto p{
+        transition: font-size 0s .2s linear;
+        font-size:12px;
+        font-weight: 300;
+        text-shadow: 0px 0px 10px #000000;
     }
 }

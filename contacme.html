@@ -7,6 +7,7 @@
     <!--Nombre de la pestaña en el navegador y la imagen en la pestaña-->
     <title>CONTACT ME</title>
     <link rel="shortcut icon" href="media/favicon.png" alt="logo de la pagina">
+    <script src="javascript/contactme.js" defer></script>
 </head>
 <body>
    <!--Menú de navegación de la página-->
@@ -19,15 +20,14 @@
                 <!--Con el fieldset marcamos un recuadro dentro del formulacion con las mismas características-->
                 <fieldset>
                     <legend>Personal information</legend><br>
-                        Name <input type="text" name="name" required  placeholder="Insert here your name"><br><br>
-                        Surname <input type="text" name="surname"  placeholder="Insert here your surname"><br><br>
-                        Phone <input type="tel" name="mobile" placeholder="Insert Here your phone number" required><br><br>
-                        Email <input type="text" name="email" placeholder="Insert Here your phone number" required><br><br>
+                        Name <input type="text" name="name" required ><br><br>
+                        Surname <input type="text" name="surname" ><br><br>
+                        Phone <input type="tel" name="mobile"  required><br><br>
+                        Email <input type="text" name="email"required><br><br>
                         Upload file: <input type="file" name="archivossubidos"><br><br>
-                        <textarea name="observaciones" rows="10" cols="40" placeholder="Write here what you required from me..."></textarea><br>
+                        <textarea name="observaciones" rows="10" cols="40" placeholder="Write here what you want from me..."></textarea><br>
                         <input type="submit" value="Send"> <input type="reset" value="Reset">
                 </fieldset><br>
     </form>
-    
 </body>
 </html>

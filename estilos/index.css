@@ -4,6 +4,15 @@
     box-sizing: border-box;
     background-color: blanchedalmond;   
 }
+body.light-mode {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
 nav{
     display: flex;
     justify-content: space-around;
