@@ -1,11 +1,28 @@
-// Script para mostrar un mensaje de confirmación al hacer clic en un enlace de contacto
-const contactLinks = document.querySelectorAll('contact-link');
+document.addEventListener("DOMContentLoaded", () => {
+    // Crear el elemento del cursor personalizado
+    const cursor = document.createElement('div');
+    cursor.classList.add('cursor');
+    document.body.appendChild(cursor);
 
-contactLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-        const confirmed = confirm("¿Estás seguro de que quieres contactar conmigo?");
-        if (!confirmed) {
-            event.preventDefault(); // Evita que el enlace se siga cuando se cancela el mensaje de confirmación
-        }
+    // Actualizar la posición del cursor personalizado
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+    });
+    const links = document.querySelectorAll('a');
+
+    // Añadir eventos para cambiar el tamaño del cursor al pasar sobre un enlace
+    links.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            cursor.classList.add('cursor--link-hover');
+        });
+        link.addEventListener('mouseleave', () => {
+            cursor.classList.remove('cursor--link-hover');
+        });
     });
 });
+// Mostrar mensaje de bienvenida
+const showWelcomeMessage = () => {
+    alert('Welcome to my page! I know it is not the best page. But I hope to improve it soon.');
+};
+setTimeout(showWelcomeMessage, 1000);
