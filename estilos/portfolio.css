@@ -1,16 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: blanchedalmond;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
 }
-nav{
+
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,128 +21,162 @@ nav{
     border-bottom: 1px solid black;
     margin-bottom: 5px;
 }
-nav a{
+
+nav a {
     color: black;
     text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
     color: gold;
 }
-.works{
+
+
+.works {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
 }
-.imagenes{
+
+
+.imagenes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
-.img{
+.img {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
-    height:90%;
+    height: 90%;
     width: 100%;
-    border-radius:15px ;
+    border-radius: 15px;
 }
-.texto{
+
+
+.texto {
     overflow: hidden;
     position: absolute;
-    flex-direction: column;
-    transform: translateY(0px);
-    margin-bottom: 9px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: translateY(0);
+    margin-bottom: 9px;
     border-radius: 30px;
+    transition: height 1s, transform 1s, background-color 1s;
+    width: 500px;
+    height: 80px;
 }
 
-.texto h3{
+.texto h3 {
     text-shadow: 0px 0px 15px rgb(255, 255, 255);
     padding-top: 40px;
     color: rgb(0, 0, 0);
     font-weight: 300;
-    font-size: 27px;  
+    font-size: 27px;
 }
 
-.texto p{
+.texto p {
     text-align: center;
     padding: 20px;
-    color:rgb(0, 0, 0);
-    font-size: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 0;
     font-weight: 300;
 }
 
-.imagenes .texto{
-    width: 500px;
-    height: 80px;
-    transition: 1s;
-}
-
-.imagenes:hover .texto{
-    transition: height 1s, transform 1s, background-color 1s;
+.imagenes:hover .texto {
     transform: translateY(-150px);
     height: 300px;
 }
-.imagenes:hover .texto p{
-    transition: font-size 0s .2s linear;
+
+.imagenes:hover .texto p {
     font-size: 23px;
+    transition: font-size 0s 0.2s linear;
     font-weight: 300;
 }
-.puntos{
+
+
+.puntos {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-@media (min-width: 768px) and (max-width: 1024px){
-    .works{
-        height: 100vh;
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav a {
+        font-size: 15px;
     }
+
+    .works {
+        height: 100vh
+    }
+
+    .texto h3 {
+        font-size: 10px;
+    }
+
+    .texto p {
+        font-size: 10px;
+    }
+
     .imagenes .texto {
         width: 50%;
         height: 100px;
     }
-    
-    .imagenes:hover .texto {
-        transform: translateY(-50px);
-        height: 200px;
-    }
-    
-    .imagenes:hover .texto p {
-        font-size: 20px;
-    }
-}
 
-@media (min-width: 350px) and (max-width: 767px) {
-    .works{
-        height: 100%;
+    .imagenes:hover .texto {
+        transform: translateY(-2px);
+        height: 80px;
     }
-    .texto h3{
-        font-weight: 300;
-        font-size: 10px;  
-    } 
-    .texto p{
-        text-align: center;
-        font-weight: 300;
+
+    .imagenes:hover .texto p {
         font-size: 10px;
-    }    
-    .imagenes .texto{
-        width: 40%;
-        height: 50px;
-        transition: 1s;
-    }
-    .imagenes:hover .texto{
-        transition: height 1s, transform 1s, background-color 1s;
-        transform: translateY(-02px);
-        height: 60px;
-    }
-    .imagenes:hover .texto p{
-        transition: font-size 0s .2s linear;
-        font-size:10px;
+        transition: font-size 0s 0.2s linear;
         font-weight: 300;
         text-shadow: 0px 0px 10px #000000;
     }
 }
+@media (min-width: 350px) and (max-width: 767px) {
+    nav a {
+        font-size: 10px;
+    }
+
+    .works {
+        height: auto;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .texto {
+        width: 90%;
+        height: 60px;
+    }
+
+    .texto h3 {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .texto p {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .imagenes:hover .texto {
+        transform: translateY(-20px);
+        height: 60px;
+    }
+
+    .imagenes:hover .texto p {
+        font-size: 12px;
+    }
+    }

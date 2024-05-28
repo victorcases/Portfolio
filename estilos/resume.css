@@ -1,70 +1,90 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: blanchedalmond;   
+    background-color: blanchedalmond;
 }
-nav{
+
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid black;
 }
-nav a{
+
+nav a {
     color: black;
     text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
     color: gold;
 }
-.head{
+
+
+.head {
     margin-top: 3%;
     display: flex;
     justify-content: center;
     padding-left: 5rem;
 }
-.intro{
+
+
+.intro {
     display: inline-block;
     padding: 3rem;
 }
-.intro h2{
+
+.intro h2,
+.intro h4 {
     margin-bottom: 3%;
 }
-.intro h4{
-    margin-bottom: 3%;
-}
-.educacion, .experience{
+
+
+.educacion,
+.experience {
     margin: 5%;
 }
-.educacion h3{
+
+.educacion h3,
+.experience h3 {
     margin-bottom: 2%;
 }
-.experience h3{
-margin-bottom: 2%;
-}
-.foto img{
+
+
+.foto img {
     width: 60%;
     border-radius: 15px;
 }
-ul{
+
+
+ul {
     list-style: upper-roman;
     margin: 1%;
 }
-.button{
+
+
+.button {
     text-align: center;
 }
-.button button{
+
+.button button {
     border: 4px groove black;
     background-color: white;
     border-radius: 25px;
     padding: 5px;
 }
-.button button:hover{
-    background:grey;
+
+.button button:hover {
+    background: grey;
     color: wheat;
 }
-.habilidades{
+
+
+.habilidades {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -72,43 +92,42 @@ ul{
     padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
-    width: 100%; 
+    width: 100%;
 }
-@media (min-width: 768px) and (max-width: 1024px){
-    .head{
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .head {
         margin-top: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
     }
-    .foto {
+    .foto{
+        text-align: center;
         width: 100%;
     }
+    .foto img {
+        width: 40%;
+    }
+
     .intro {
         width: 100%;
         text-align: center;
-        padding: 0rem;
+        padding: 0;
         padding-right: 10%;
+        padding-left: 1%;
     }
-    .educacion, .experience{
+
+    .educacion,
+    .experience {
         margin: 5%;
-    }
-    .educacion h3{
-        margin-bottom: 2%;
-    }
-    .experience h3{
-    margin-bottom: 2%;
-    }
-    ul{
-        list-style: upper-roman;
-        margin: 1%;
     }
 }
 
-@media (min-width: 350px) and (max-width: 767px){
-    .nav a{
-        font-size: 15px;
+@media (min-width: 350px) and (max-width: 767px) {
+    nav a {
+        font-size: 10px;
     }
+
     .head {
         margin-top: 3%;
         display: block;
@@ -116,37 +135,35 @@ ul{
         margin-left: -25%;
         justify-content: center;
     }
-    .head img{
+
+    .head img {
         margin-bottom: 3%;
     }
+
     .intro {
         width: 70%;
         text-align: center;
-        padding: 0rem;
+        padding: 0;
     }
-    .intro h2{
+
+    .intro h2 {
         font-size: 15px;
         margin: 3%;
     }
-    .intro p{
+
+    .intro p {
         font-size: 13px;
     }
-    h3{
-        text-align: center;
-    }
-    .educacion, .experience{
+
+    .educacion,
+    .experience {
         margin: 5%;
         width: 70%;
         font-size: 13px;
         margin-left: 10%;
     }
-    .educacion h3{
-        margin-bottom: 2%;
-    }
-    .experience h3{
-    margin-bottom: 2%;
-    }
-    .habilidades{
+
+    .habilidades {
         display: flex;
         width: 90%;
         padding: 0;
@@ -154,11 +171,12 @@ ul{
         font-size: 13px;
         margin-left: 5%;
     }
-    ul{
-        list-style: upper-roman;
+
+    ul {
         margin-bottom: 1%;
     }
-    .button{
+
+    .button {
         padding-top: 1%;
         margin: 0;
     }
