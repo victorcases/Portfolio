@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Nombre de la pestaña en el navegador y la imagen en la pestaña-->
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilos/portfolio.css">
-    <link rel="shortcut icon" href="media/favicon.png" alt="logo de la pagina">
+    <link rel="shortcut icon" href="media/favicon.png" alt="logo de la página">
     <script src="javascript/portfolio.js" defer></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
-     <!--Menú de navegación de la página-->
+    <!-- Menú de navegación de la página -->
     <nav>
-        <a href="index.html">MAIN PAGE</a> <a href="resume.html">RESUME</a> <a href="portfolio.html">PORTFOLIO</a> <a href="contacme.html">CONTACT ME</a> 
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="menu">
+            <a href="index.html">Main Page</a>
+            <a href="resume.html">Resume</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contactme.html">Contact Me</a>
+        </div>
+        <div id="google_translate_element" class="google"></div>
     </nav>
-            <div class="works">
-            <div class="atras">
-                <img id="atras" src="media/flechas.png" alt="atras" width="100px" loading="lazy">
-            </div>
-    
-            <div class="imagenes">
-                <div id="img">
-                    <a href="home.html" target="_blank"><img class="img" src="media/primerapractica.png" alt="imagen 1" loading="lazy"></a>
-                </div>
-                
-                <div id="texto" class="texto">
-                    <h3>Proyect 1</h3>
-                    <p>That's my first work. This page runs only using HTML.</p>
-                </div>
-                
-            </div>
-    
-            <div class="adelante" id="adelante">
-                <img src="media/flechas (1).png" width="100px" alt="adelante" loading="lazy">
-            </div>
-            <div id="puntos"></div>
-        </body>
 
+    <div class="works">
+        <div class="atras">
+            <img id="atras" src="media/flechas.png" alt="atras" width="100" loading="lazy">
+        </div>
+
+        <div class="imagenes">
+            <div id="img">
+                <a href="home.html" target="_blank"><img class="img" src="media/primerapractica.png" alt="imagen 1" loading="lazy"></a>
+            </div>
+
+            <div id="texto" class="texto">
+                <h3>Project 1</h3>
+                <p>That's my first work. This page runs only using HTML.</p>
+            </div>
+        </div>
+
+        <div class="adelante" id="adelante">
+            <img src="media/flechas (1).png" width="100" alt="adelante" loading="lazy">
+        </div>
+    </div>
+
+    <div id="puntos"></div>
+</body>
 </html>

@@ -8,11 +8,19 @@
     <title>CONTACT ME</title>
     <link rel="shortcut icon" href="media/favicon.png" alt="logo de la pagina">
     <script src="javascript/contactme.js" defer></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
-<body>
-   <!--Menú de navegación de la página-->
+<body> 
+    <!-- Menú de navegación de la página -->
     <nav>
-        <a href="index.html" target="_blank">MAIN PAGE</a> <a href="resume.html"  target="_blank">RESUME</a> <a href="portfolio.html"  target="_blank">PORTFOLIO</a> <a href="contacme.html"  target="_blank">CONTACT ME</a> 
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="menu">
+            <a href="index.html">MAIN PAGE</a>
+            <a href="resume.html">RESUME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contacme.html">CONTACT ME</a>
+        </div>
+        <div id="google_translate_element" class="google"></div>
     </nav>
     <h2>Hi there! If i just be interesting to you please fill the next form up to contact me and I will answer you as soon as possible. Thank you! </h2>
 <!-- Creación del formulario -->        

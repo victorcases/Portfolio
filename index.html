@@ -7,14 +7,19 @@
     <title>Victor's Portfolio</title>
     <link rel="stylesheet" href="estilos/index.css">
     <script src="javascript/index.js" defer></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body> 
     <!-- Menú de navegación de la página -->
     <nav>
-        <a href="index.html">MAIN PAGE</a>
-        <a href="resume.html">RESUME</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-        <a href="contacme.html">CONTACT ME</a> 
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="menu">
+            <a href="index.html">MAIN PAGE</a>
+            <a href="resume.html">RESUME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contacme.html">CONTACT ME</a>
+        </div>
+        <div id="google_translate_element" class="google"></div>
     </nav>
     <div class="entero">
         <h1>Hi everyone! My name is Victor and here you're know more about me and my works. Hope you enjoy it!</h1>

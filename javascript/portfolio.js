@@ -1,3 +1,5 @@
+//RECOGIDA DE LAS 3 IMÁGENES EN LAS CUALES SE VA A REALIZAR EL CARRUSEL.
+
 let imagenes = [
     {
         "url": "media/primerapractica.png",
@@ -26,6 +28,8 @@ let puntos = document.getElementById('puntos');
 let texto = document.getElementById('texto');
 let actual = 0;
 
+//FUNCIONABILIDAD DEL CARRUSEL
+
 function posicionCarrusel() {
     puntos.innerHTML = "";
     for (let i = 0; i < imagenes.length; i++) {
@@ -36,7 +40,6 @@ function posicionCarrusel() {
         }
     }
 }
-
 function actualizarCarrusel() {
     imagen.innerHTML = `<a href="${imagenes[actual].link}" target="_blank"><img class="img" src="${imagenes[actual].url}" alt="logo pagina" loading="lazy"></a>`;
     texto.innerHTML = `
@@ -44,6 +47,8 @@ function actualizarCarrusel() {
         <p>${imagenes[actual].descripcion}</p>`;
     posicionCarrusel();
 }
+
+//FUNCIOANBILIDAD A LAS FLECHAS (DELANTE Y ATRÁS)
 
 atras.addEventListener('click', function() {
     actual -= 1;
@@ -61,4 +66,16 @@ adelante.addEventListener('click', function() {
     actualizarCarrusel();
 });
 
-posicionCarrusel();
+posicionCarrusel(); 
+
+//TRADUCTOR PÁGINA.
+
+        function googleTranslateElementInit() {
+	        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ca,eu,gl,es,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+//MENÚ DESPLEGABLE
+
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }

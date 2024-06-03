@@ -23,3 +23,15 @@ const resetButton = document.querySelector('input[type="reset"]');
     resetButton.addEventListener('click', function() {
         form.reset();
     });
+
+//TRADUCTOR PÁGINA.
+
+        function googleTranslateElementInit() {
+	        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ca,eu,gl,es,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+//MENÚ DESPLEGABLE
+
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
